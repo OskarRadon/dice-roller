@@ -2,7 +2,7 @@
 
 #### _Epicodus week 5 group project_
 
-#### By _**Taylor Grohs, Jay Whang, Oskar Radon**_
+#### By _**Taylor Grohs, Jay Whang, and Oskar Radon**_
 
 ## Description
 
@@ -30,4 +30,4 @@ _???_
 
 *MIT License*
 
-Copyright (c) 2015 **_Taylor Grohs, Jay Whang, Oskar Radon_**
+Copyright (c) 2015 **_Taylor Grohs, Jay Whang, and Oskar Radon_**

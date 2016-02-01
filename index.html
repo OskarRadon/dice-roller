@@ -10,8 +10,123 @@
     </head>
   </head>
   <body>
-    <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Brand</a>
+        </div>
 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <div class="jumbotron">
+      <h1>Dice Roller!</h1>
     </div>
+    <div class="row">
+      <div class="col-sm-8">
+    <table class="table">
+      <th>
+        <h2>Dice Roller</h2>
+      </th>
+      <tr>
+        <td>Dice</td>
+        <td>Number of rolls</td>
+        <td>+</td>
+        <td>-</td>
+        <td>Modifier</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>4side dice</td>
+        <td><input type="text" name="d4" value="" maxlength="3" id="d4NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d4" value="" maxlength="3" id="d4ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d4Roll" type="click" name="d4">Roll</button></td>
+      </tr>
+      <tr>
+        <td>6side dice</td>
+        <td><input type="text" name="d6" value="" maxlength="3" id="d6NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d6" value="" maxlength="3" id="d6ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d6Roll" type="click" name="d6">Roll</button></td>
+      </tr>
+      <tr>
+        <td>8side dice</td>
+        <td><input type="text" name="d8" value="" maxlength="3" id="d8NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d8" value="" maxlength="3" id="d8ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d8Roll" type="click" name="d8">Roll</button></td>
+      </tr>
+      <tr>
+        <td>10side dice</td>
+        <td><input type="text" name="d10" value="" maxlength="3" id="d10NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d10" value="" maxlength="3" id="d10ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d10Roll" type="click" name="d10">Roll</button></td>
+      </tr>
+      <tr>
+        <td>12side dice</td>
+        <td><input type="text" name="d12" value="" maxlength="3" id="d12NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d12" value="" maxlength="3" id="d12ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d12Roll" type="click" name="d12">Roll</button></td>
+      </tr>
+      <tr>
+        <td>20side dice</td>
+        <td><input type="text" name="d20" value="" maxlength="3" id="d20NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d20" value="" maxlength="3" id="d20ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d20Roll" type="click" name="d20">Roll</button></td>
+      </tr>
+      <tr>
+        <td>100side dice</td>
+        <td><input type="text" name="d100" value="" maxlength="3" class="d100" id="d100NumOfRolls"></td>
+        <td><input type="radio" name="optradio" value = "+"></input></td>
+        <td><input type="radio" name="optradio" value = "-"></input></td>
+        <td><input type="text" name="d100" value="" maxlength="3" id="d100ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d100Roll" type="click" name="d100">Roll</button></td>
+      </tr>
+    </table>
+    <div class="container">
+      <br>
+    <!-- <button class="btn btn-sm btn-default" id="roll" type="submit">Roll</button> -->
+    <button class="btn btn-sm btn-default">Reset</button>
+  </div>
+  </div>
+  <div class="col-sm-4">
+    <textarea id = "result"></textarea>
+  </div>
+</div>
+
+
   </body>
 </html>

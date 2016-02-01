@@ -3,6 +3,6 @@ describe("Dice", function(){
     var testDice = new Dice(6, 3, 2)
     expect(testDice.sides).to.equal(6);
     expect(testDice.rolls).to.equal(3);
-    expect(testDice.modifier).to.equal(6);
+    expect(testDice.modifier).to.equal(2);
   })
 })

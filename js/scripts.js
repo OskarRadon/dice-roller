@@ -42,7 +42,6 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-
     $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
     $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 

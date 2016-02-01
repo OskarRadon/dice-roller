@@ -32,6 +32,23 @@ function points(totalRolls, modifierOperator, modifierNumber) {
 
 
 $(document).ready(function() {
+  $("#d2Roll").click(function(){
+    var sides = 4;
+    var rollNum = parseInt($("input#d2NumOfRolls").val());
+    var modifierNumber = parseInt($("input#d2ModNumber").val());
+    var modifierOperator = $("input[type = 'radio']:checked").val();
+
+    var newDice = new Dice(sides, rollNum, modifierNumber);
+    var rolled = newDice.play();
+    var total = points(rolled, modifierOperator, modifierNumber);
+
+
+    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+
+  });
+
+
   $("#d4Roll").click(function(){
     var sides = 4;
     var rollNum = parseInt($("input#d4NumOfRolls").val());
@@ -137,4 +154,21 @@ $(document).ready(function() {
     $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
+
+  $("#dxRoll").click(function(){
+    var sides = parseInt($("input#dxNumOfRolls1").val());
+    var rollNum = parseInt($("input#dxNumOfRolls2").val());
+    var modifierNumber = parseInt($("input#dxModNumber").val());
+    var modifierOperator = $("input[type = 'radio']:checked").val();
+
+    var newDice = new Dice(sides, rollNum, modifierNumber);
+    var rolled = newDice.play();
+    var total = points(rolled, modifierOperator, modifierNumber);
+
+
+    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+
+  });
+
 });

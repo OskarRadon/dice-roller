@@ -45,6 +45,8 @@
     <div class="jumbotron">
       <h1>Dice Roller!</h1>
     </div>
+    <div class="row">
+      <div class="col-sm-8">
     <table class="table">
       <th>
         <h2>Dice Roller</h2>
@@ -55,6 +57,7 @@
         <td>+</td>
         <td>-</td>
         <td>Modifier</td>
+        <td></td>
       </tr>
       <tr>
         <td>4side dice</td>
@@ -62,6 +65,7 @@
         <td><input type="radio" name="optradio" value = "+"></input></td>
         <td><input type="radio" name="optradio" value = "-"></input></td>
         <td><input type="text" name="d4" value="" maxlength="3" id="d4ModNumber"></td>
+        <td><button class="btn btn-sm btn-default" id="d4Roll" type="click" name="d4">Roll</button></td>
       </tr>
       <tr>
         <td>6side dice</td>
@@ -106,5 +110,17 @@
         <td><input type="text" name="d100" value="" maxlength="3" id="d100ModNumber"></td>
       </tr>
     </table>
+    <div class="container">
+      <br>
+    <!-- <button class="btn btn-sm btn-default" id="roll" type="submit">Roll</button> -->
+    <button class="btn btn-sm btn-default">Reset</button>
+  </div>
+  </div>
+  <div class="col-sm-4">
+    <textarea id = "result"></textarea>
+  </div>
+</div>
+
+
   </body>
 </html>

@@ -14,7 +14,7 @@ Dice.prototype.play = function () {
     counter++;
     totalRolls.push(Math.floor(Math.random() * (max - min +1)) + min);
   }
-  return [1, 2, 3];
+  return totalRolls;
 };
 
 function points(totalRolls, modifierOperator, modifierNumber) {
@@ -32,5 +32,16 @@ function points(totalRolls, modifierOperator, modifierNumber) {
 
 
 $(document).ready(function() {
-
+  $("#d4Roll").click(function(event){
+    var sides = 4;
+    var rollNum = parseInt($("input#d4NumOfRolls").val());
+    var modifierNumber = parseInt($("input#d4ModNumber").val());
+    var modifierOperator = $("input[type = 'radio']:checked").val();
+    var newDice = new Dice(sides, rollNum, modifierNumber);
+    var rolled = newDice.play();
+    var total = points(rolled, modifierOperator, modifierNumber);
+    $("#result").append("Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $("#result").append(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    event.preventDefault();
+  });
 });

@@ -14,8 +14,18 @@ Dice.prototype.play = function () {
     counter++;
     totalRolls.push(Math.floor(Math.random() * (max - min +1)) + min);
   }
+  return [1, 2, 3];
+};
+
+function points(totalRolls, modifierOperator, modifierNumber) {
+  var totalPoints = 0;
   totalRolls.forEach(function(index)  {
-    numberHolder = index;
+    totalPoints += index;
   });
-  return numberHolder;
+  if (modifierOperator === "+") {
+    totalPoints += modifierNumber;
+  } else if (modifierOperator === "-") {
+    totalPoints -= modifierNumber;
+  }
+  return totalPoints;
 };

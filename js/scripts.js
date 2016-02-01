@@ -29,3 +29,8 @@ function points(totalRolls, modifierOperator, modifierNumber) {
   }
   return totalPoints;
 };
+
+
+$(document).ready(function() {
+
+});

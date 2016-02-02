@@ -3,6 +3,6 @@ textarea {
   min-height: 450px;
 }
 
-#player2text {
+#player2text, #player3text, #player4text {
   display: none;
 }

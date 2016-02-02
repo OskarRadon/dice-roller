@@ -169,22 +169,50 @@ $(document).ready(function() {
     $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
+  function checkingId(id) {
+    console.log(id);
+    var idBank =["player1", "player2", "player3", "player4"];
+    for (var i =0; i < idBank.length; i++) {
+      if (id !== idBank[i]) {
+        $("#"+idBank[i]+"text").hide();
+        $("#"+idBank[i]+"text").removeClass("active")
+        $("#"+idBank[i]).removeClass("active");
+      }
+      else if (id === idBank[i]){
+        $("#"+id+"text").show();
+        $("#"+idBank[i]+"text").addClass("active");
+        $("#"+id).addClass("active");
+      }
+    }
+  }
+
 
   $("#player1").click(function(){
-    $("#player2text").hide();
-    $("#player1text").show();
-    $("#player1text").addClass("active");
-    $("#player1").addClass("active");
-    $("#player2").removeClass("active");
-    $("#player2text").removeClass("active");
+    var id = this.id;
+    checkingId(id);
   });
 
   $("#player2").click(function(){
-    $("#player1text").hide();
-    $("#player2text").show();
-    $("#player2text").addClass("active");
-    $("#player2").addClass("active");
-    $("#player1").removeClass("active");
-    $("#player1text").removeClass("active");
+    var id = this.id;
+    checkingId(id);
   });
+
+  $("#player3").click(function(){
+    var id = this.id;
+    checkingId(id);
+  });
+
+  $("#player4").click(function(){
+    var id = this.id;
+    checkingId(id);
+  });
+  //   var count = 3;
+  // $("#addtext").click(function(){
+  //
+  //   $(this).before("<li id='player" + count + "'><a href='#' id='player'" + count + ">Player " + count + "</a></li>")
+  //   $()
+  //
+  //   count++;
+  // 
+  // });
 });

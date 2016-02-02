@@ -170,21 +170,22 @@ $(document).ready(function() {
 
   });
   function checkingId(id) {
-    console.log(id);
     var idBank =["player1", "player2", "player3", "player4"];
     for (var i =0; i < idBank.length; i++) {
       if (id !== idBank[i]) {
         $("#"+idBank[i]+"text").hide();
         $("#"+idBank[i]+"text").removeClass("active")
         $("#"+idBank[i]).removeClass("active");
+        $("#"+idBank[i]+"clear").hide()
       }
       else if (id === idBank[i]){
         $("#"+id+"text").show();
         $("#"+idBank[i]+"text").addClass("active");
         $("#"+id).addClass("active");
+        $("#"+idBank[i]+"clear").show();
       }
     }
-  }
+  };
 
 
   $("#player1").click(function(){
@@ -192,9 +193,17 @@ $(document).ready(function() {
     checkingId(id);
   });
 
+  $("#player1clear").click(function(){
+    $("#player1text").empty();
+  });
+
   $("#player2").click(function(){
     var id = this.id;
     checkingId(id);
+  });
+
+  $("#player2clear").click(function(){
+    $("#player2text").empty();
   });
 
   $("#player3").click(function(){
@@ -202,10 +211,20 @@ $(document).ready(function() {
     checkingId(id);
   });
 
+  $("#player3clear").click(function(){
+    $("#player3text").empty();
+  });
+
   $("#player4").click(function(){
     var id = this.id;
     checkingId(id);
   });
+
+  $("#player4clear").click(function(){
+    $("#player4text").empty();
+  });
+
+
   //   var count = 3;
   // $("#addtext").click(function(){
   //
@@ -213,6 +232,6 @@ $(document).ready(function() {
   //   $()
   //
   //   count++;
-  // 
+  //
   // });
 });

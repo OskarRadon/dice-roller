@@ -2,3 +2,7 @@ textarea {
   min-width: 300px;
   min-height: 450px;
 }
+
+#player2text {
+  display: none;
+}

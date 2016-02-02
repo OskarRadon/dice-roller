@@ -42,8 +42,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -59,8 +59,8 @@ $(document).ready(function() {
     var total = points(rolled, modifierOperator, modifierNumber);
 
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -74,8 +74,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -89,8 +89,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -104,8 +104,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -119,8 +119,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -134,8 +134,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -149,8 +149,8 @@ $(document).ready(function() {
     var rolled = newDice.play();
     var total = points(rolled, modifierOperator, modifierNumber);
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
@@ -165,9 +165,26 @@ $(document).ready(function() {
     var total = points(rolled, modifierOperator, modifierNumber);
 
 
-    $("#result").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
-    $("#result").prepend("\n" + "Roll(" + rollNum + this.name + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+    $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
+    $(".result.active").prepend("\n" + "Roll(" + rollNum + this.name + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
 
   });
 
+  $("#player1").click(function(){
+    $("#player2text").hide();
+    $("#player1text").show();
+    $("#player1text").addClass("active");
+    $("#player1").addClass("active");
+    $("#player2").removeClass("active");
+    $("#player2text").removeClass("active");
+  });
+
+  $("#player2").click(function(){
+    $("#player1text").hide();
+    $("#player2text").show();
+    $("#player2text").addClass("active");
+    $("#player2").addClass("active");
+    $("#player1").removeClass("active");
+    $("#player1text").removeClass("active");
+  });
 });

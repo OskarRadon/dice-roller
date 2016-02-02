@@ -130,19 +130,24 @@
         <td><input type="radio" name="dxradio" value = "-"></input></td>
         <td><input type="text" name="d" value="0" maxlength="3" id="dxModNumber"></td>
         <td><button class="btn btn-sm btn-default" id="dxRoll" type="click" name="d">Roll</button></td>
-      </tr>
-    </table>
-    <div class="container">
-      <br>
-    <!-- <button class="btn btn-sm btn-default" id="roll" type="submit">Roll</button> -->
-    <button class="btn btn-sm btn-default">Reset</button>
-  </div>
-  </div>
-  <div class="col-sm-4">
-    <textarea id = "result"></textarea>
-  </div>
-</div>
-
+        </tr>
+      </table>
+      <div class="container">
+        <br>
+      <!-- <button class="btn btn-sm btn-default" id="roll" type="submit">Roll</button> -->
+        <button class="btn btn-sm btn-default">Reset</button>
+      </div>
+      </div>
+      <div class="col-sm-4">
+        <ul class="nav nav-tabs">
+          <li class="active" id="player1"><a href="#">Player 1</a></li>
+          <li><a href="#" id="player2">Player 2</a></li>
+          <li><a href="#"> + </a></li>
+        </ul>
+        <textarea id="player1text" class="result active"></textarea>
+        <textarea id="player2text" class="result"></textarea>
+      </div>
+    </div>
 
   </body>
 </html>

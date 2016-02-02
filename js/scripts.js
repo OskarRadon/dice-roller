@@ -224,6 +224,11 @@ $(document).ready(function() {
     $("#player4text").empty();
   });
 
+  $("#clearinput").click(function(){
+      $("input[type ='text']").val(0)
+      $("input[value = '+']").prop("checked", true);
+  });
+
 
   //   var count = 3;
   // $("#addtext").click(function(){

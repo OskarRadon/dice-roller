@@ -176,54 +176,17 @@ $(document).ready(function() {
   };
 
 
-  $("#player1").click(function(){
-    var id = this.id;
-    checkingId(id);
+  var idBank =["player1", "player2", "player3", "player4"];
+  idBank.forEach(function(id){
+
+    $(".player").click(function() {
+      var id = this.id;
+      checkingId(id);
+    });
+
+    $(".playerclear").click(function(){
+      var id = this.id;
+      $("#"+id+"ext").empty();
+    });
   });
-
-  $("#player1clear").click(function(){
-    $("#player1text").empty();
-  });
-
-  $("#player2").click(function(){
-    var id = this.id;
-    checkingId(id);
-  });
-
-  $("#player2clear").click(function(){
-    $("#player2text").empty();
-  });
-
-  $("#player3").click(function(){
-    var id = this.id;
-    checkingId(id);
-  });
-
-  $("#player3clear").click(function(){
-    $("#player3text").empty();
-  });
-
-  $("#player4").click(function(){
-    var id = this.id;
-    checkingId(id);
-  });
-
-  $("#player4clear").click(function(){
-    $("#player4text").empty();
-  });
-
-  $("#clearinput").click(function(){
-
-  });
-
-
-  //   var count = 3;
-  // $("#addtext").click(function(){
-  //
-  //   $(this).before("<li id='player" + count + "'><a href='#' id='player'" + count + ">Player " + count + "</a></li>")
-  //   $()
-  //
-  //   count++;
-  //
-  // });
 });

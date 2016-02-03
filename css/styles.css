@@ -3,7 +3,7 @@ textarea {
   min-height: 450px;
 }
 
-#player2text, #player3text, #player4text, #player2clear, #player3clear, #player4clear {
+#player2text, #player3text, #player4text, #player2t, #player3t, #player4t {
   display: none;
 }
 

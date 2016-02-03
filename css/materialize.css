@@ -8700,7 +8700,7 @@ textarea.materialize-textarea {
   border-bottom: 1px solid #9e9e9e;
   border-radius: 0;
   outline: none;
-  height: 3rem;
+  height: 2rem;
   width: 100%;
   font-size: 1rem;
   margin: 0 0 15px 0;
@@ -9051,12 +9051,12 @@ textarea.materialize-textarea {
   Radio Buttons
 ***************/
 /* Remove default Radio Buttons */
-[type="radio"]:not(:checked),
+/*[type="radio"]:not(:checked),
 [type="radio"]:checked {
   position: absolute;
   left: -9999px;
   visibility: hidden;
-}
+}*/
 
 [type="radio"]:not(:checked) + label,
 [type="radio"]:checked + label {

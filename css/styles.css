@@ -16,8 +16,9 @@ h1, p {
 
   color: white;
 }
-table img {
-  max-width: 100px;
+img.diceImg {
+  height: 40px;
+
 }
 
 #roller {

@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8">
     <title>Title</title>
-
     <link href='https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy:400,400italic' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/jquery-1.12.0.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -12,46 +11,25 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     </head>
   </head>
+
   <header>
+    <img src="img/logo.png" alt="" id="logo" />
     <div class="container">
-      <div class="col s12">
-        <div class = "row">
-          <div class="col s4">
-            <div class="container2">
-              <div class="red flame"></div>
-              <div class="orange flame"></div>
-              <div class="yellow flame"></div>
-              <div class="white flame"></div>
-            </div>
-
-          </div>
-          <div class="col s4">
-            <div class="dark fire">
-              <h1 class="Blazing" contenteditable="true">Dice Roller</h1>
-            </div>
-            <p class="center-align">
-              Choose the amount, type, and modifier for the dice you want to roll and your results are recorded in the tabbed browser on the left.
-            </p>
-          </div>
-          <div class="col s4">
-            <div class="container2">
-              <div class="red flame"></div>
-              <div class="orange flame"></div>
-              <div class="yellow flame"></div>
-              <div class="white flame"></div>
-            </div>
-
-          </div>
-
+      <div class="row">
+        <div class="col l6 offset-l3">
+          <p>
+            Choose the amount, type, and modifier for the dice you want to roll and your results are recorded in the tabbed browser on the left. To quickly roll a dice simply click on its image!
+          </p>
         </div>
       </div>
     </div>
   </header>
+
   <body>
     <div class="container">
       <div class="row">
         <div class="col m5 l5">
-          <div class="card blue-grey lighten-4" id="roller">
+          <div class="card blue-grey grey lighten-1" id="roller">
             <table>
               <thead>
                 <tr>
@@ -135,20 +113,21 @@
         </div>
 
         <div class="col m2 l2" id="buttons">
-          <a class="waves-effect waves-light btn blue-grey" id="diceRoll">Roll</a>
-          <a class="waves-effect waves-light btn blue-grey inputclear">Clear</a>
+          <a class="waves-effect waves-light btn green darken-1" id="diceRoll">Roll</a>
+          <a class="waves-effect waves-light btn teal darken-1
+ inputclear">Clear</a>
         </div>
 
         <div class="col m5 l5">
-          <div class="card blue-grey lighten-2" id="results">
+          <div class="card grey lighten-1" id="results">
             <div class="card">
               <div class="row">
                 <div class="col s12">
                   <ul class="tabs">
-                    <li class="tab col s1 blue-grey lighten-4 player" id="player1"><a class="active" href="#test1">Player 1</a></li>
-                    <li class="tab col s1 blue-grey lighten-4 player" id="player2"><a href="#test2">Player 2</a></li>
-                    <li class="tab col s1 blue-grey lighten-4 player" id="player3"><a href="#test3">Player 3</a></li>
-                    <li class="tab col s1 blue-grey lighten-4 player" id="player4"><a href="#test4">Player 4</a></li>
+                    <li class="tab col s1 grey lighten-1 player" id="player1"><a class="active" href="#test1">Player 1</a></li>
+                    <li class="tab col s1 grey lighten-1 player" id="player2"><a href="#test2">Player 2</a></li>
+                    <li class="tab col s1 grey lighten-1 player" id="player3"><a href="#test3">Player 3</a></li>
+                    <li class="tab col s1 grey lighten-1 player" id="player4"><a href="#test4">Player 4</a></li>
                   </ul>
 
                   <textarea id="player1text" class="result active" readonly></textarea>
@@ -163,10 +142,10 @@
           </div>
           <div class="row">
             <div class="col m5 l5 right-align">
-              <a class="waves-effect waves-light btn blue-grey playerclear" id="player1t">Clear</a>
-              <a class="waves-effect waves-light btn blue-grey playerclear" id="player2t">Clear</a>
-              <a class="waves-effect waves-light btn blue-grey playerclear" id="player3t">Clear</a>
-              <a class="waves-effect waves-light btn blue-grey playerclear" id="player4t">Clear</a>
+              <a class="waves-effect waves-light btn light-blue darken-1 playerclear" id="player1t">Clear</a>
+              <a class="waves-effect waves-light btn light-blue darken-1 playerclear" id="player2t">Clear</a>
+              <a class="waves-effect waves-light btn light-blue darken-1 playerclear" id="player3t">Clear</a>
+              <a class="waves-effect waves-light btn light-blue darken-1 playerclear" id="player4t">Clear</a>
             </div>
           </div>
         </div>

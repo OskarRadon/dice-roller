@@ -1,3 +1,68 @@
+* {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+table img {
+  max-width: 100px;
+}
+
+#roller {
+  padding: 0 25px;
+}
+
+#buttons {
+  margin-top: 35px;
+}
+
+a.btn {
+  margin: 5px 0;
+  width: 100%;
+}
+
+#results {
+  height: 500px;
+}
+
+#title {
+   padding: 20px;
+ }
+
+/*textarea {
+  width: 100%;
+  height: 100%;
+}*/
+
+.tabs .tab a{
+  color: black;
+}
+
+.tabs .tab a:hover{
+  color: white;
+}
+
+.tabs .indicator {
+  background-color: black;
+}
+
+input[type=text] {
+  max-width: 25px;
+}
+
+tr td img {
+  max-width: 75px;
+}
+
+tr{
+  line-height: .5em;
+  padding: 0px;
+}
+
+textarea {
+  min-height: 445px;
+  border: none;
+  background-color: transparent;
+}
+
 textarea {
   min-width: 350px;
   min-height: 450px;

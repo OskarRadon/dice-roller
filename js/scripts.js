@@ -153,8 +153,11 @@ $(document).ready(function() {
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + xRollNum + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
     }
-      $("input[type ='text']").val(0)
-      $("input[value = '+']").prop("checked", true);
+  });
+
+  $(".inputclear").click(function() {
+    $("input[type ='text']").val(0)
+    $("input[value = '+']").prop("checked", true);
   });
 
   function checkingId(id) {

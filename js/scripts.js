@@ -175,6 +175,10 @@ $(document).ready(function() {
     }
   };
 
+  $(".playerclear").click(function(){
+    $("input[type ='text']").val(0)
+    $("input[value = '+']").prop("checked", true);
+  });
 
   var idBank =["player1", "player2", "player3", "player4"];
   idBank.forEach(function(id){

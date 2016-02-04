@@ -45,6 +45,13 @@ input[type=text] {
   max-width: 25px;
 }
 
+/*input[type=radio] {
+  margin: -10px;
+}*/
+
+th {
+  margin: 40px;
+}
   /*BUTTONS */
 
 #buttons {

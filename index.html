@@ -34,7 +34,7 @@
               <thead>
                 <tr>
                   <th>Dice</th>
-                  <th># of Rolls</th>
+                  <th>Rolls</th>
                   <th>+</th>
                   <th>-</th>
                   <th>Modifier</th>
@@ -120,24 +120,22 @@
           <div class="card grey lighten-1" id="results">
             <div class="card">
               <div class="row">
-                <div class="col s12">
+                <div class="col s12" style="overflow:auto">
                   <ul class="tabs">
                     <li class="tab col s1 grey lighten-1 player" id="player1"><a class="active" href="#test1">Player 1</a></li>
                     <li class="tab col s1 grey lighten-1 player" id="player2"><a href="#test2">Player 2</a></li>
                     <li class="tab col s1 grey lighten-1 player" id="player3"><a href="#test3">Player 3</a></li>
                     <li class="tab col s1 grey lighten-1 player" id="player4"><a href="#test4">Player 4</a></li>
                   </ul>
-
                   <textarea id="player1text" class="result active" readonly></textarea>
                   <textarea id="player2text" class="result" readonly></textarea>
                   <textarea id="player3text" class="result" readonly></textarea>
                   <textarea id="player4text" class="result" readonly></textarea>
                 </div>
               </div>
-
             </div>
-
           </div>
+
           <div class="row">
             <div class="col m5 l5 right-align">
               <a class="waves-effect waves-light btn deep-orange accent-2 playerclear player1clear" id="player1t">Clear</a>

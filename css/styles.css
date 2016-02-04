@@ -32,6 +32,11 @@ tr{
   line-height: .5em;
   padding: 0px;
 }
+
+thead {
+  border: none;
+}
+
 #buttons {
   margin-top: 35px;
 }

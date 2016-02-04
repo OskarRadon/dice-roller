@@ -45,9 +45,13 @@ input[type=text] {
   max-width: 25px;
 }
 
-/*input[type=radio] {
-  margin: -10px;
-}*/
+#d2ModNumber, #d4ModNumber,
+#d6ModNumber, #d8ModNumber,
+#d10ModNumber, #d12ModNumber,
+#d20ModNumber, #d100ModNumber,
+#dxModNumber {
+  margin-left: 5px;
+}
 
 th {
   margin: 40px;

@@ -67,8 +67,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":");
     }
 
     if (die4 === "4-sided") {
@@ -77,8 +78,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if (die6 === "6-sided") {
@@ -87,8 +89,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if (die8 === "8-sided") {
@@ -97,8 +100,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if (die10 === "10-sided") {
@@ -107,8 +111,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if (die12 === "12-sided") {
@@ -117,8 +122,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if (die20 === "20-sided") {
@@ -127,8 +133,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if (die100 === "100-sided") {
@@ -137,8 +144,9 @@ $(document).ready(function() {
       var rolled = newDice.playDiceOnly();
       var total = rolled;
 
-      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
-      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+      $(".result.active").prepend(
+        "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
     if(roll2Num !== 0) {
@@ -286,6 +294,7 @@ $(document).ready(function() {
     $("input[type ='text']").val(0)
     $("input[value = '+']").prop("checked", true);
   });
+
 
   var idBank =["player1", "player2", "player3", "player4"];
   idBank.forEach(function(id){

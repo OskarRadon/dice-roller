@@ -17,6 +17,16 @@ Dice.prototype.play = function () {
   return totalRolls;
 };
 
+Dice.prototype.playDiceOnly = function () {
+  var min = 1;
+  var max = this.sides;
+  var counter  = 1;
+  while (counter <= this.sides) {
+    counter++;
+    return Math.floor(Math.random() * (max - min +1)) + min;
+  }
+}
+
 function points(totalRolls, modifierOperator, modifierNumber) {
   var totalPoints = 0;
   totalRolls.forEach(function(index)  {
@@ -32,8 +42,15 @@ function points(totalRolls, modifierOperator, modifierNumber) {
 
 
 $(document).ready(function() {
-  $("#diceRoll").click(function(){
-
+  $("#diceRoll, img").click(function(){
+    var die2 = this.name;
+    var die4 = this.name;
+    var die6 = this.name;
+    var die8 = this.name;
+    var die10 = this.name;
+    var die12 = this.name;
+    var die20 = this.name;
+    var die100 = this.name;
     var roll2Num = parseInt($("input#d2NumOfRolls").val());
     var roll4Num = parseInt($("input#d4NumOfRolls").val());
     var roll6Num = parseInt($("input#d6NumOfRolls").val());
@@ -43,6 +60,86 @@ $(document).ready(function() {
     var roll20Num = parseInt($("input#d20NumOfRolls").val());
     var roll100Num = parseInt($("input#d100NumOfRolls").val());
     var xRollNum = parseInt($("input#dxNumOfRolls2").val());
+
+    if (die2 === "2-sided") {
+      var sides = 2;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die4 === "4-sided") {
+      var sides = 4;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die6 === "6-sided") {
+      var sides = 6;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die8 === "8-sided") {
+      var sides = 8;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die10 === "10-sided") {
+      var sides = 10;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die12 === "12-sided") {
+      var sides = 12;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die20 === "20-sided") {
+      var sides = 20;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
+
+    if (die100 === "100-sided") {
+      var sides = 100;
+      var newDice = new Dice(sides);
+      var rolled = newDice.playDiceOnly();
+      var total = rolled;
+
+      $(".result.active").prepend(rolled.toString()+ ", " + "\n" + "Total: " + total + "\n");
+      $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" + "\n");
+    }
 
     if(roll2Num !== 0) {
       var sides = 2;
@@ -54,6 +151,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll2Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "2 Sided Dice:");
     }
 
     if (roll4Num !== 0) {
@@ -66,6 +164,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll4Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "4 Sided Dice:");
     }
 
     if(roll6Num !== 0) {
@@ -79,6 +178,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll6Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "6 Sided Dice:");
     }
 
     if(roll8Num !== 0) {
@@ -91,6 +191,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll8Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "8 Sided Dice:");
     }
 
     if(roll10Num !== 0) {
@@ -103,6 +204,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll10Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "10 Sided Dice:");
     }
 
     if(roll12Num !== 0) {
@@ -116,6 +218,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll12Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "12 Sided Dice:");
     }
 
     if(roll20Num !== 0) {
@@ -128,6 +231,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll20Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "20 Sided Dice:");
     }
 
     if(roll100Num !== 0) {
@@ -140,6 +244,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + roll100Num + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + "100 Sided Dice:");
     }
 
     if(xRollNum !== 0) {
@@ -152,6 +257,7 @@ $(document).ready(function() {
 
       $(".result.active").prepend(rolled.toString()+ ", " + modifierOperator + modifierNumber + "\n" + "Total: " + total + "\n");
       $(".result.active").prepend("\n" + "Roll(" + xRollNum + "d" + sides + ")" + modifierOperator + modifierNumber + ":" + "\n");
+      $(".result.active").prepend("\n" + sides + " Sided Dice:");
     }
   });
 
@@ -167,13 +273,13 @@ $(document).ready(function() {
         $("#"+idBank[i]+"text").hide();
         $("#"+idBank[i]+"text").removeClass("active")
         $("#"+idBank[i]).removeClass("active");
-        $("#"+idBank[i]+"clear").hide()
+        $("."+idBank[i]+"clear").hide()
       }
       else if (id === idBank[i]){
         $("#"+id+"text").show();
         $("#"+idBank[i]+"text").addClass("active");
         $("#"+id).addClass("active");
-        $("#"+idBank[i]+"clear").show();
+        $("."+idBank[i]+"clear").show();
       }
     }
   };

@@ -100,3 +100,16 @@ textarea {
 #player2text, #player3text, #player4text, #player2t, #player3t, #player4t {
   display: none;
 }
+
+/*MEDIA QUERY*/
+
+@media all and (max-width: 481px) {
+  #buttons {
+    margin: -165px auto 5px;
+  }
+
+  #logo {
+    max-width: 75%;
+    margin: 40px auto 15px;
+  }
+}

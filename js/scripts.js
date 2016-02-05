@@ -149,7 +149,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "Roll(" + "d" + sides + ")" + ":" );
     }
 
-    if(roll2Num !== 0) {
+    if(roll2Num > 0) {
       var sides = 2;
       var modifierNumber = parseInt($("input#d2ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -162,7 +162,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "2 Sided Dice:");
     }
 
-    if (roll4Num !== 0) {
+    if (roll4Num > 0) {
       var sides = 4;
       var modifierNumber = parseInt($("input#d4ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -175,7 +175,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "4 Sided Dice:");
     }
 
-    if(roll6Num !== 0) {
+    if(roll6Num > 0) {
       var sides = 6;
       var modifierNumber = parseInt($("input#d6ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -189,7 +189,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "6 Sided Dice:");
     }
 
-    if(roll8Num !== 0) {
+    if(roll8Num > 0) {
       var sides = 8;
       var modifierNumber = parseInt($("input#d8ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -202,7 +202,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "8 Sided Dice:");
     }
 
-    if(roll10Num !== 0) {
+    if(roll10Num > 0) {
       var sides = 10;
       var modifierNumber = parseInt($("input#d10ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -215,7 +215,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "10 Sided Dice:");
     }
 
-    if(roll12Num !== 0) {
+    if(roll12Num > 0) {
       var sides = 12;
       var modifierNumber = parseInt($("input#d12ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -229,7 +229,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "12 Sided Dice:");
     }
 
-    if(roll20Num !== 0) {
+    if(roll20Num > 0) {
       var sides = 20;
       var modifierNumber = parseInt($("input#d20ModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();
@@ -255,7 +255,7 @@ $(document).ready(function() {
       $(".result.active").prepend("\n" + "100 Sided Dice:");
     }
 
-    if(xRollNum !== 0) {
+    if(xRollNum > 0) {
       var sides = parseInt($("input#dxNumOfRolls1").val());
       var modifierNumber = parseInt($("input#dxModNumber").val());
       var modifierOperator = $("input[type = 'radio']:checked").val();

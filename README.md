@@ -6,25 +6,15 @@
 
 ## Description
 
-_A simple dice rolling app_
+_A simple dice rolling app using the MaterializeCSS framework and jQuery._
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_Check out the project here on GitHub pages or download it as a zip/clone it, and check it out!_
-
-## Known Bugs
-
-_None yet!_
+_Check out the project [here]() on GitHub pages or download it as a zip/clone it, and check it out!_
 
 ## Technologies Used
 
-_???_
+_Materialize, jQuery_
 
 ### License
 

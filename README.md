@@ -10,7 +10,7 @@ _A simple dice rolling app using the MaterializeCSS framework and jQuery._
 
 ## Setup/Installation Requirements
 
-_Check out the project [here]() on GitHub pages or download it as a zip/clone it, and check it out!_
+_Check out the project [here](https://oskarradon.github.io/dice-roller/) on GitHub pages or download it as a zip/clone it, and check it out!_
 
 ## Technologies Used
 
